@@ -11,7 +11,7 @@ const Footer = () => {
             <h2 className="font-[900] text-4xl text-[#5865f2] leading-8">
               IMAGINE A PLACE
             </h2>
-            <div className="flex items-center space-x-2 cursor-pointer">
+            <div className="flex items-center space-x-2">
               <Image
                 src="/assets/flag.png"
                 alt="Flag"
@@ -26,7 +26,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-4 h-4"
+                className="w-4 h-4 cursor-pointer"
               >
                 <path
                   strokeLinecap="round"

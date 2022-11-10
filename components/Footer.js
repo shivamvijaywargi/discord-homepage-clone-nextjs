@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -11,7 +12,13 @@ const Footer = () => {
               IMAGINE A PLACE
             </h2>
             <div className="flex items-center space-x-2 cursor-pointer">
-              <img src="/assets/flag.png" alt="Flag" className="w-6 h-4" />
+              <Image
+                src="/assets/flag.png"
+                alt="Flag"
+                className="w-6 h-4"
+                width={20}
+                height={20}
+              />
               <p>English, USA</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,25 +36,33 @@ const Footer = () => {
               </svg>
             </div>
             <div className="flex gap-8">
-              <img
+              <Image
                 src="/assets/twitter.svg"
                 alt="Twitter"
                 className="cursor-pointer"
+                width={25}
+                height={25}
               />
-              <img
+              <Image
                 src="/assets/instagram.svg"
                 alt="Instagram"
                 className="cursor-pointer"
+                width={25}
+                height={25}
               />
-              <img
+              <Image
                 src="/assets/facebook.svg"
                 alt="Facebook"
                 className="cursor-pointer"
+                width={25}
+                height={25}
               />
-              <img
+              <Image
                 src="/assets/youtube.svg"
                 alt="YouTube"
                 className="cursor-pointer"
+                width={25}
+                height={25}
               />
             </div>
           </div>
@@ -100,7 +115,12 @@ const Footer = () => {
           <div className="pt-8 flex items-center justify-between">
             <div>
               <Link href={"/"}>
-                <img src="/assets/discord-logo.svg" alt="Logo" />
+                <Image
+                  src="/assets/discord-logo.svg"
+                  alt="Logo"
+                  width={150}
+                  height={150}
+                />
               </Link>
             </div>
             <button className="bg-[#5865f2] text-white hover:bg-[#7983f5] px-4 py-2 rounded-full font-[600] transition hover:shadow-2xl">

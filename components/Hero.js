@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
     <div className="bg-[#404eed] overflow-hidden z-[9999]">
-      <div className="z-30 flex flex-col lg:justify-center lg:items-center lg:text-center text-white p-6 mt-6 lg:mt-16 pb-0 relative md:h-[80vh] lg:h-[70vh] xl:h-[60vh] lg:container lg:mx-auto">
+      <div className="z-30 flex flex-col lg:justify-center lg:items-center lg:text-center text-white p-6 mt-6 lg:mt-16 pb-0 relative md:h-[80vh] lg:h-[70vh] xl:h-[50vh] lg:container lg:mx-auto">
         <div className="z-20 space-y-4 lg:space-y-8">
           <h1 className="font-[900] text-3xl sm:text-5xl md:text-6xl text-center md:text-left lg:text-center md:max-w-lg xl:max-w-4xl lg:mx-auto">
             IMAGINE A PLACE...
@@ -35,20 +36,26 @@ const Hero = () => {
           </div>
         </div>
         <div className="mt-14 h-full w-full z-10">
-          <img
+          <Image
             src="/assets/home-bg.svg"
             alt="Background"
             className="md:absolute hidden md:block md:top-auto md:bottom-[113px] lg:bottom-[190px] md:max-w-[1550px] md:left-[-50%] lg:left-[-25%] xl:left-[-1%] transform md:scale-[1.6] lg:scale-[2] xl:scale-[1.8] xl:bottom-[153px] -z-10"
+            width={2500}
+            height={2500}
           />
-          <img
+          <Image
             src="/assets/home-left.svg"
             alt="Have fun"
-            className="-z-10 -ml-20 md:hidden lg:block lg:absolute lg:left-[-40%] xl:left-[-15%] lg:bottom-0"
+            className="-z-10 -ml-20 md:hidden lg:block lg:absolute lg:left-[-40%] xl:left-[-10%] lg:bottom-0"
+            width={600}
+            height={600}
           />
-          <img
+          <Image
             src="/assets/home-right.svg"
             alt="Discuss"
-            className="md:absolute md:right-0 md:bottom-0 hidden md:block md:left-[50%] lg:left-auto lg:right-[-40%] -ml-20 xl:right-[-15%] -z-10"
+            className="md:absolute md:right-0 md:bottom-0 hidden md:block md:left-[50%] lg:left-auto lg:right-[-45%] -ml-20 xl:right-[-14%] -z-10"
+            width={600}
+            height={600}
           />
         </div>
       </div>

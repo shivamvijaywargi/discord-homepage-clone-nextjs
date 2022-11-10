@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Card = ({
@@ -11,7 +12,7 @@ const Card = ({
         }`}
       >
         <div className="md:flex-1 lg:flex-[1.5]">
-          <img src={image} alt={heading} />
+          <Image src={image} alt={heading} width={700} height={700} />
         </div>
         <div className="md:flex-1">
           <h2 className="font-[700] text-gray-800 text-lg leading-6 md:text-5xl md:max-w-xs">

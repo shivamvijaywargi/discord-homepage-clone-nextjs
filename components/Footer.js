@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
             <h2 className="font-[900] text-4xl text-[#5865f2] leading-8">
               IMAGINE A PLACE
             </h2>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 cursor-pointer">
               <img src="/assets/flag.png" alt="Flag" className="w-6 h-4" />
               <p>English, USA</p>
               <svg
@@ -28,13 +29,29 @@ const Footer = () => {
               </svg>
             </div>
             <div className="flex gap-8">
-              <img src="/assets/twitter.svg" alt="Twitter" />
-              <img src="/assets/instagram.svg" alt="Instagram" />
-              <img src="/assets/facebook.svg" alt="Facebook" />
-              <img src="/assets/youtube.svg" alt="YouTube" />
+              <img
+                src="/assets/twitter.svg"
+                alt="Twitter"
+                className="cursor-pointer"
+              />
+              <img
+                src="/assets/instagram.svg"
+                alt="Instagram"
+                className="cursor-pointer"
+              />
+              <img
+                src="/assets/facebook.svg"
+                alt="Facebook"
+                className="cursor-pointer"
+              />
+              <img
+                src="/assets/youtube.svg"
+                alt="YouTube"
+                className="cursor-pointer"
+              />
             </div>
           </div>
-          <div className="mt-12 md:mt-0 flex flex-wrap gap-x-24  xl:justify-between gap-y-12">
+          <div className="mt-12 md:mt-0 flex flex-wrap gap-x-24 w-full xl:justify-between gap-y-12">
             <div className="space-y-2">
               <h3 className="text-[#5865f2]">Product</h3>
               <ul className="space-y-1">
@@ -82,7 +99,9 @@ const Footer = () => {
         <div className="border-t-[#5865f2] border-t-[1px] mt-8">
           <div className="pt-8 flex items-center justify-between">
             <div>
-              <img src="/assets/discord-logo.svg" alt="Discord Logo" />
+              <Link href={"/"}>
+                <img src="/assets/discord-logo.svg" alt="Logo" />
+              </Link>
             </div>
             <button className="bg-[#5865f2] text-white hover:bg-[#7983f5] px-4 py-2 rounded-full font-[600] transition hover:shadow-2xl">
               Sign up

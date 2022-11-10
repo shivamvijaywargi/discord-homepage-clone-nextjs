@@ -5,12 +5,7 @@ const Navbar = () => {
     <div className="bg-[#404eed]">
       <nav className="lg:container lg:mx-auto p-6 lg:px-12 text-white">
         <div className="flex justify-between items-center">
-          {/* <img
-    src="/assets/discord-logo.svg"
-    alt="Logo"
-    className="text-white fill-white"
-    /> */}
-          <div>Discord</div>
+          <img src="/assets/discord-logo.svg" alt="Logo" />
           <ul className="gap-8 font-[600] hidden lg:flex">
             <li className="hover:cursor-pointer hover:underline">Download</li>
             <li className="hover:cursor-pointer hover:underline">Nitro</li>

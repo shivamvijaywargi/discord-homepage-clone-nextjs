@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="bg-[#404eed]">
-      <nav className="lg:container lg:mx-auto p-6 text-white">
+      <nav className="lg:container lg:mx-auto p-6 lg:px-12 text-white">
         <div className="flex justify-between items-center">
           {/* <img
     src="/assets/discord-logo.svg"
